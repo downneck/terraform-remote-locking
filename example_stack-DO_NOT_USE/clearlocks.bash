@@ -1,0 +1,1 @@
+../clearlocks.bash

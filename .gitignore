@@ -1,0 +1,5 @@
+terraform.tfvars
+terraform.tfstate.backup
+terraform.tfstate
+*.lock
+*.swp
