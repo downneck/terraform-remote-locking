@@ -7,3 +7,4 @@ Each subdirectory of this directory holds a separate terraform stack with its ow
 * requires the AWS CLI to be installed and available in your PATH
 * requires terraform to be installed and available in your PATH
 * to make a new stack, just create the empty directory and then run makelinks.bash. NOTE: DO NOT COPY EXISTING DIRECTORIES
+* install_scripts.bash takes a directory and copies the bash scripts necessary for operation to it
