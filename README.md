@@ -27,7 +27,6 @@ Each subdirectory of this directory holds a separate terraform stack with its ow
     ├── makelinks.bash
     ├── plan.bash
     ├── provider.tf
-    ├── terraform.tfstate
     ├── terraform.tfvars
     ├── variables.tf
     ├── service.us-east-1
