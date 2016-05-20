@@ -22,26 +22,28 @@ Each subdirectory of this directory holds a separate terraform stack with its ow
 
 ### Example Repo Directory Structure
 
-.
- * [apply.bash](./apply.bash)
- * [clearlocks.bash](./clearlocks.bash)
- * [makelinks.bash](./makelinks.bash)
- * [plan.bash](./plan.bash)
- * [terraform.tfstate](./terraform.tfstate)
- * [variables.tf](./variables.tf)
- * [terraform.tfvars](./terraform.tfvars)
- * [provider.tf](./provider.tf)
- * [service.dev.us-east-1](./service.dev.us-east-1)
-   * [clearlocks.bash](./service.dev.us-east-1/clearlocks.bash -> ../clearlocks.bash)
-   * [apply.bash](./service.dev.us-east-1/apply.bash -> ../apply.bash)
-   * [plan.bash](./service.dev.us-east-1/plan.bash -> ../plan.bash)
-   * [terraform.tfvars](./service.dev.us-east-1/terraform.tfvars -> ../terraform.tfvars)
-   * [provider.tf](./service.dev.us-east-1/provider.tf -> ../provider.tf)
-   * [variables.tf](./service.dev.us-east-1/variables.tf -> ../variables.tf)
- * [frontend.dev.us-east-1](./frontend.dev.us-east-1)
-   * [clearlocks.bash](./frontend.dev.us-east-1/clearlocks.bash -> ../clearlocks.bash)
-   * [apply.bash](./frontend.dev.us-east-1/apply.bash -> ../apply.bash)
-   * [plan.bash](./frontend.dev.us-east-1/plan.bash -> ../plan.bash)
-   * [terraform.tfvars](./frontend.dev.us-east-1/terraform.tfvars -> ../terraform.tfvars)
-   * [provider.tf](./frontend.dev.us-east-1/provider.tf -> ../provider.tf)
-   * [variables.tf](./frontend.dev.us-east-1/variables.tf -> ../variables.tf)
+    ├── apply.bash
+    ├── clearlocks.bash
+    ├── makelinks.bash
+    ├── plan.bash
+    ├── provider.tf
+    ├── terraform.tfstate
+    ├── terraform.tfvars
+    ├── variables.tf
+    ├── service.us-east-1
+    │   ├── apply.bash -> ../apply.bash
+    │   ├── clearlocks.bash -> ../clearlocks.bash
+    │   ├── default.tf
+    │   ├── plan.bash -> ../plan.bash
+    │   ├── provider.tf -> ../provider.tf
+    │   ├── terraform.tfvars -> ../terraform.tfvars
+    │   └── variables.tf -> ../variables.tf
+    ├── frontend.us-east-1
+    │   ├── apply.bash -> ../apply.bash
+    │   ├── clearlocks.bash -> ../clearlocks.bash
+    │   ├── default.tf
+    │   ├── plan.bash -> ../plan.bash
+    │   ├── provider.tf -> ../provider.tf
+    │   ├── terraform.tfvars -> ../terraform.tfvars
+    │   └── variables.tf -> ../variables.tf
+
