@@ -24,11 +24,10 @@ NOTE: to make a new stack, create the empty directory under your main terraform 
 Applying terraform changes
 * cd into the target stack's directory
 * update default.tf with your changes
-* run ./plan.bash
-* assuming nobody else is locking that stack and your changes pass the plan stage
-* run ./apply.bash
+* run ./plan.bash (do not run "terraform plan" directly)
+* run ./apply.bash (assuming plan.bash succeeds) (do not run "terraform apply" directly)
 
-if your plan fails for any reason or if you decide not to apply the plan, you can use clearlocks.bash to remove your user's lock from that stack
+if your plan fails for any reason or if you decide not to apply the plan, you can use clearlocks.bash to remove your user's lock from that stack. removing an entire stack with "terraform destroy" remains unchanged.
 
 
 ### Example Repo Directory Structure
