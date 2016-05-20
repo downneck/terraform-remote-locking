@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ue
 #
 # install_scripts.bash, Copyright 2016 David Kovach and William Broach
 #
