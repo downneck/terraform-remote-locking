@@ -32,6 +32,8 @@ if your plan fails for any reason or if you decide not to apply the plan, you ca
 
 ### Example Repo Directory Structure
 
+an example stack directory is also included as part of this repo
+
     ├── apply.bash
     ├── clearlocks.bash
     ├── makelinks.bash
