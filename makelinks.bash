@@ -32,12 +32,12 @@ for i in $(ls -d */) ; do
   cd $i
 
   # make the links
-  ln -s ../clearlocks.bash
-  ln -s ../apply.bash
-  ln -s ../plan.bash
-  ln -s ../provider.tf
-  ln -s ../terraform.tfvars
-  ln -s ../variables.tf
+  ln -s ../clearlocks.bash ||true
+  ln -s ../apply.bash ||true
+  ln -s ../plan.bash ||true
+  ln -s ../provider.tf ||true
+  ln -s ../terraform.tfvars ||true
+  ln -s ../variables.tf ||true
 
   # set up remote state
   current_dir="$(pwd)"
