@@ -44,7 +44,14 @@ if [ $? == 0 ]; then
   terraform remote push
 
   echo "[OK]: Apply complete!, Removing lock"
-  aws -q s3 rm s3://$TF_STATE_BUCKET/$stackname/$lockfilename 2>/dev/null
+  aws s3 rm s3://$TF_STATE_BUCKET/$stackname/$lockfilename 2>/dev/null
+  if [ ! $? == 0 ]; then
+    echo "[ERROR]: unable to remove lock"
+    exit 1
+  fi
 else
   echo "[Error]: No lock from your user found, please run a plan first"
+  exit 1
 fi
+
+exit 0

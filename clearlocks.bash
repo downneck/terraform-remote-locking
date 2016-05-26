@@ -38,7 +38,7 @@ aws s3 ls s3://$TF_STATE_BUCKET/$stackname/$lockfilename | grep $(whoami)
 
 if [ $? == 0 ]; then
   echo "[OK]: Found YOUR lockfile!, REMOVING"
-  s3cmd -q del s3://$TF_STATE_BUCKET/$stackname/$lockfilename 2>/dev/null
+  aws s3 rm s3://$TF_STATE_BUCKET/$stackname/$lockfilename 2>/dev/null
 else
   echo "[Error]: No lock from your user found"
 fi
