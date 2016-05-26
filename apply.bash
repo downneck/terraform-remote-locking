@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ue
+
 #
 # apply.bash, Copyright 2016 David Kovach and William Broach
 #
