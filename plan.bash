@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ue
+
 #
 # plan.bash, Copyright 2016 David Kovach and William Broach
 #
