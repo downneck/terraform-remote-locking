@@ -1,5 +1,9 @@
 # Terraform Remote Locking
 
+# THIS SOFTWARE IS DEPRECATED. 
+
+Feel free to use it if you really want to, but the advent of native backends for remote state and DynamoDB remote locking in terraform means this software is no longer necessary and will not be maintained. The repo is being kept up for historical purposes.
+
 ### General Info
 
 These scripts will help prevent corruption of a remote tfstate and allow for smoother team-wide interaction by using an s3 bucket to hold/check remote locks in addition to tfstate.
